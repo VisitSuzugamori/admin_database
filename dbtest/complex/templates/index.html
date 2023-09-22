@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}MySite HOME{% endblock %}
+{% block header %}
+<h1>MySite<span class="lead">HOME</span></h1>
+{% endblock %}
+{% block contents %}
+<p>
+    WIP
+    <a href="{% url 'complex:index' %}admin/" class="btn">admin</a>
+</p>
+<p>
+    {% if user.is_authenticated %}
+    <a href="{% url 'accounts:logout' %}" class="btn">ログアウト</a>
+    {% else %}
+    <a href="{% url 'accounts:signup' %}" class="btn">今すぐサインアップ</a>
+    <a href="{% url 'accounts:login' %}" class="btn">登録済みの方はログイン</a>
+    {% endif %}
+</p>
+{% for record in orderby_records %}
+<h2><a href={% url "complex:page" record.id %}>{{ record.id }}</a></h2>
+{% endfor %}
+{% include "pager.html" %}
+{% endblock %}

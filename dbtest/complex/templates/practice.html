@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="これは「NEUGATE」の課題です。学習のためのページです。例として適当な内容をまとめています。">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="埼玉県内のセイコーマート | HTMLの学習">
+        <meta property="og:locale" content="ja_JP">
+        <meta property="article:author" content="naoto">
+        <title>埼玉県内のセイコーマート | HTMLの学習</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@700&display=swap">
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/sakura.css/css/sakura.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1>NEUGATE Web基礎 HTML/CSS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>埼玉県内のセイコーマート</h2>
+                <section>
+                    <h3>セイコーマート ほしの店</h3>
+                    <p>八潮市 <a href="https://goo.gl/maps/QWPjj3QiyFfBHuKp7">地図</a></p>
+                    <p><img src="images/yashio.jpg" width="50%" alt=""></p>
+                </section>
+                <section>
+                    <h3>セイコーマート 草加マルエー店</h3>
+                    <p>草加市 <a href="https://goo.gl/maps/9t2m6q6oBDnTc4kS9">地図</a></p>
+                    <p><img src="images/souka.jpg" width="50%" alt=""></p>
+                </section>
+                <section>
+                    <h3>セイコーマート はしもと店</h3>
+                    <p>吉川市 <a href="https://goo.gl/maps/bXDJq26CjpoK8ZB4A">地図</a></p>
+                    <p><img src="images/yoshikawa.jpg" width="50%" alt=""></p>
+                </section>
+                <section>
+                    <h3>セイコーマート まんだな店</h3>
+                    <p>さいたま市西区 <a href="https://goo.gl/maps/cVa2B2GawizWYcha9">地図</a></p>
+                    <p><img src="images/mandana.jpg" width="50%" alt=""></p>
+                </section>
+                <section>
+                    <h3>セイコーマート さいたま今羽店</h3>
+                    <p>さいたま市今羽 <a href="https://goo.gl/maps/fC7gregeGov7dufT9">地図</a></p>
+                    <p><img src="images/konba.jpg" width="50%" alt=""></p>
+                </section>
+                <section>
+                    <h3>セイコーマート 伊奈大針店</h3>
+                    <p>伊奈町大針 <a href="https://goo.gl/maps/feFi7uqiPYheuSY27">地図</a></p>
+                    <p><img src="images/ina.jpg" width="50%" alt=""></p>
+                </section>
+                <section>
+                    <h3>セイコーマート まちだ店</h3>
+                    <p>上尾市 <a href="https://goo.gl/maps/P5tEDeARNEATZmMf8">地図</a></p>
+                    <p><img src="images/ageo-machida.jpg" width="50%" alt=""></p>
+                </section>
+                <section>
+                    <h3>セイコーマート 久喜下早見店</h3>
+                    <p>久喜市 <a href="https://goo.gl/maps/3L7gE3FDUUny6cak7">地図</a></p>
+                    <p>まだ行ってない</p>
+                </section>
+                <section>
+                    <h3>セイコーマート 加須向川岸店</h3>
+                    <p>加須市 <a href="https://goo.gl/maps/YgVWd7wei44Fr2GE7">地図</a></p>
+                    <p>まだ行ってない</p>
+                </section>
+            </article>
+            <aside>
+                <section>
+                    <h3 id="about">私について</h3>
+                    <p>これが、私のいきかた</p>
+                </section>
+                <section>
+                    <h3 id="inner-link">ページ内リンク</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>
+        </main>
+
+        <footer id="contact">
+            <p>制作：わたしです</p>
+            <p>気になる方は、以下のフォームよりご連絡ください</p>
+            <form action="#" method="post" name="contact-form">
+                <dl>
+                    <dt><label for="name">名前</label></dt>
+                    <dd><input type="text" id="name" name="name"></dd>
+                    <dt><label for="tel">電話</label></dt>
+                    <dd><input type="tel" id="tel" name="tel"></dd>
+                    <dt><label for="url">url</label></dt>
+                    <dd><input type="url" id="url" name="url"></dd>
+                    <dt><label for="email">email</label></dt>
+                    <dd><input type="email" id="email" name="email"></dd>
+                    <dt><label for="message">メッセージ</label></dt>
+                    <dd><textarea id="message" name="message"></textarea></dd>
+                    <dt>&nbsp;</dt>
+                    <dd><input type="submit" name="myForm" value="送信する"></dd>
+                </dl>
+            </form>
+        </footer>
+    </body>
+</html>

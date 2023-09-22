@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{object.title }}{% endblock %}
+{% block header %}
+<h1>{{object.title }}</h1>
+{% endblock %}
+{% block contents %}
+<p style="margin-top: 1em;">
+    公開日時： {{ object.issued }}
+    《<a href={% url "mainblog:category" object.category.id object.category.name %}>{{ object.category.name }}</a>》
+</p>
+<p>{{ object.content|linebreaks }}</p>
+{% endblock %}

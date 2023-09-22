@@ -1,0 +1,698 @@
+[
+{
+  "model": "complex.magazine",
+  "pk": 1,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-03-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1803535/",
+    "tag_line": "新連載",
+    "title": "電撃マオウ 2019年5月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 2,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-04-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1811359/",
+    "tag_line": null,
+    "title": "電撃マオウ 2019年6月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 3,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-05-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1825565/",
+    "tag_line": null,
+    "title": "電撃マオウ 2019年7月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 4,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-06-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1846565/",
+    "tag_line": null,
+    "title": "電撃マオウ 2019年8月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 5,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-07-26",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1852543/",
+    "tag_line": null,
+    "title": "電撃マオウ 2019年9月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 6,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-09-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1865344/",
+    "tag_line": null,
+    "title": "電撃マオウ 2019年10月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 7,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-09-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1878719/",
+    "tag_line": null,
+    "title": "電撃マオウ 2019年11月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 8,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-10-26",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1890948/",
+    "tag_line": null,
+    "title": "電撃マオウ 2019年12月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 9,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-11-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1901845/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年1月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 10,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2019-12-26",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1920608/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年2月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 11,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-01-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1924654/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年3月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 12,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-02-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1936699/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年4月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 13,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-03-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1950108/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年5月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 14,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-04-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1963258/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年6月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 15,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-05-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1976477/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年7月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 16,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-09-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10043.html",
+    "tag_line": "表紙 コミック発売",
+    "title": "電撃マオウ 2020年11月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 17,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-10-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10042.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年12月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 18,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-11-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10041.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年1月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 19,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-12-26",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/2057229/",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年2月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 20,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-01-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10040.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年3月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 21,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-02-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10039.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年4月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 22,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-04-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10037.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年6月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 23,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-05-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10036.html",
+    "tag_line": "表紙 付録 コミック発売",
+    "title": "電撃マオウ 2021年7月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 24,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-06-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10035.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年8月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 25,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-08-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10033.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年10月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 26,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-10-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10126.html",
+    "tag_line": "表紙 コミック発売",
+    "title": "電撃マオウ 2021年12月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 27,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-12-25",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10359.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年2月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 28,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-01-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10429.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年3月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 29,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-02-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10559.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年4月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 30,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-04-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-11802.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年6月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 31,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-05-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-11895.html",
+    "tag_line": "表紙 付録 コミック発売",
+    "title": "電撃マオウ 2022年7月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 32,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-07-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12139.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年9月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 33,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-09-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12387.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年11月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 34,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-10-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12533.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年12月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 35,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-12-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12776.html",
+    "tag_line": "表紙 コミック発売",
+    "title": "電撃マオウ 2023年2月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 36,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-01-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12846.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年3月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 37,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-02-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-13031.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年4月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 38,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-03-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-13229.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年5月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 39,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-06-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/1988616/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年8月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 40,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-07-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/2000104/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年9月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 41,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2020-08-27",
+    "site": "https://www.fujisan.co.jp/product/1281681477/b/2019534/",
+    "tag_line": null,
+    "title": "電撃マオウ 2020年10月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 42,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-03-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10038.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年5月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 43,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-07-21",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10034.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年9月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 44,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-09-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10125.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2021年11月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 45,
+  "fields": {
+    "cover_image": "https://dengekimaoh.jp/archives/014/202110/54389a5937747dc3f8e7fe67e555c89d1d9157cf951f61b7825f9976b2418794.jpg",
+    "memo": "",
+    "released": "2021-10-20",
+    "site": "https://dengekimaoh.jp/news/special/20211019.html",
+    "tag_line": "付録 青騎士",
+    "title": "電撃マオウ Encounter with the [Der Blaue Reiter] (『青騎士』第4号 特別小冊子)"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 46,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2021-11-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10261.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年1月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 47,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-03-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-10667.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年5月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 48,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2005-10-27",
+    "site": null,
+    "tag_line": null,
+    "title": "電撃マオウ？ 不明"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 49,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-06-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12020.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年8月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 50,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-08-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12240.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2022年10月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 51,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2022-11-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-12616.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年1月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 52,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-04-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-14153.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年6月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 53,
+  "fields": {
+    "cover_image": null,
+    "memo": "アニメ化企画進行中！\r\n『ざつ旅 -That's Journey-』が表紙＆巻頭で登場！\r\n付録 ざつ旅AR第2弾のマーカーになる、ざつ旅クリアファイル",
+    "released": "2023-05-26",
+    "site": "https://dengekimaoh.jp/magazine/magazine-14303.html",
+    "tag_line": "表紙 付録 アニメ化 コミック発売",
+    "title": "電撃マオウ 2023年7月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 54,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-06-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-14517.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年8月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 55,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-07-27",
+    "site": "https://dengekimaoh.jp/magazine/magazine-14879.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年9月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 56,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-08-25",
+    "site": "https://dengekimaoh.jp/magazine/magazine-14986.html",
+    "tag_line": null,
+    "title": "電撃マオウ 2023年10月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 57,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-09-27",
+    "site": null,
+    "tag_line": null,
+    "title": "電撃マオウ 2023年11月号"
+  }
+},
+{
+  "model": "complex.magazine",
+  "pk": 58,
+  "fields": {
+    "cover_image": null,
+    "memo": "",
+    "released": "2023-10-27",
+    "site": null,
+    "tag_line": null,
+    "title": "電撃マオウ 2023年12月号"
+  }
+}
+]

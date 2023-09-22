@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:author" content="naoto">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@700&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/sakura.css/css/sakura.css">
+    <link rel="stylesheet" type="text/css" href={% static "sakura.css" %}>
+    <link rel="stylesheet" type="text/css" href={% static "style.css" %}>
+    <style>
+    </style>
+  </head>
+  <body>
+    <main id="container">
+      <header class="article-header">
+        {% block header %}{% endblock %}
+      </header>
+      <article>
+        {% block contents %}{% endblock %}
+      </article>
+    </main>
+    <footer id="footer">
+      <section>
+        <ul class="box nav">
+          <li class="nav-item"><a class="nav-link" href={% url "complex:index" %}>☝HOME</a></li>
+        </ul>
+        <div class="box">
+          <h3>by naoto</h3>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

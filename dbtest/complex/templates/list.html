@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Category: {{object_list.0}}{% endblock %}
+{% block header %}
+<h1>{{object_list}}<span class="lead">の一覧</span></h1>
+{% endblock %}
+{% block contents %}
+{% for record in object_list %}
+<h2><a href={% url "complex:index" record.id %}>{{record.id}}</a></h2>
+<p>
+</p>
+{% endfor %}
+{% include "pager.html" %}
+{% endblock %}

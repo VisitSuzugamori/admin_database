@@ -1,0 +1,141 @@
+body {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-image: url('./img/ikebukuro_landscape_2.jpg');
+    background-repeat: no-repeat;
+    background-color: lightcyan;
+    width: 100vw;
+    height: 170px;
+    margin: 0;
+    padding: 0;
+}
+header h1 {
+    color:brown;
+    font-size: 36px;
+    font-family: 'Zen Kaku Gothic Antique', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    width: 80vw;
+    margin: 0 0.5em 0 10vw;
+    padding: 0.5em 0;
+    z-index: 100;
+}
+header h1 .lead { font-size: 60%; }
+header h1 .lead::before {
+    content: "\A";
+    white-space: pre;
+}
+header nav {
+    background: linear-gradient(to bottom, transparent 80%, pink 100%);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 170px;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 80vw;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+header nav ul li {
+    min-width: 100px;
+    min-height: 2em;
+    margin: 0 4px;
+    padding: 4px;
+    list-style: none;
+    background: lightcyan;
+    opacity: 0.5;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 80vw;
+    min-height: 100%;
+    margin: 0 auto;
+}
+article {
+    max-width: 60vw;
+    flex: auto;
+    float: top;
+}
+article img {
+    box-shadow: 2px 2px 4px 1px #29627e;
+}
+aside {
+    min-width: 10%;
+    max-width: 20%;
+    margin-bottom: 1em;
+    font-size: smaller;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+}
+aside section {
+    padding: 0 1em;
+}
+aside ul, aside p {
+    background: lightyellow;
+}
+footer {
+    width: 100dw;
+    background: silver;
+    opacity: 0.7;
+    margin-top: 3em;
+    padding: 0;
+    font-size: 80%;
+    min-height: 100%;
+}
+footer section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80vw;
+}
+footer p, footer dl, footer ul, footer div {
+    width: 80dvw;
+    margin: 0 auto;
+    padding: 20px 0;
+    /* border: solid 1px black; */
+}
+footer .box {
+    margin: 0;
+    padding: 10px 1em;
+}
+.hidden { display: none; }
+.pagination {
+    opacity: 0.9;
+    display: flex;
+}
+.pagination li {
+    list-style: none;
+    border: dashed 2px silver;
+    padding: 3px;
+    margin: 4px;
+}
+.empty { border: dashed 2px #999; }
+.note { font-size: 80%; }
+.note::before {
+    content: "⚠";
+}
+#float {
+    position: fixed;
+    left: auto;
+    bottom: 0%;
+    max-width: 38em;
+    padding: 0;
+    margin: 0;
+}
