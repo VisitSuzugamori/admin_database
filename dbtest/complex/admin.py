@@ -20,6 +20,8 @@ from .models import (
     Web_comic,
 )
 
+# from django.contrib.gis.admin.options import GeoModelAdminMixin
+
 
 class ComicInline(admin.TabularInline):
     model = Comic
@@ -416,7 +418,16 @@ class VenueAdmin(admin.ModelAdmin):
 
 @admin.register(Place)
 class PlaceAdmin(admin.ModelAdmin):
-    fields = ["name", "venue", "address", "latitude", "longitude", "altitude", "memo"]
+    fields = [
+        "name",
+        "venue",
+        "address",
+        "latitude",
+        "longitude",
+        "altitude",
+        "point_on_map",
+        "memo",
+    ]
     inlines = [PlaceWithFragmentInline, PlaceWithSceneInline, PlaceWithStepInline]
     list_filter = ["venue"]
     search_fields = ["name"]
@@ -435,6 +446,7 @@ class PlaceAdmin(admin.ModelAdmin):
         "longitude",
         "name",
     )
+    readonly_fields = ["point_on_map"]
 
 
 @admin.register(Step)
@@ -442,7 +454,7 @@ class StepAdmin(admin.ModelAdmin):
     class Media:
         js = ("https://platform.twitter.com/widgets.js",)
 
-    fields = ["datetime", "number", "route", "place"]
+    fields = ["datetime", "number", "route", "place", "point_on_map"]
     inlines = [TweetWigetInline, StepWithPhotoInline]
     list_filter = ["route"]
     search_fields = ["datetime"]
@@ -459,6 +471,7 @@ class StepAdmin(admin.ModelAdmin):
         "place",
     )
     date_hierarchy = "datetime"
+    readonly_fields = ["point_on_map"]
 
 
 @admin.register(Scene)

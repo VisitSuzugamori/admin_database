@@ -1,15 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'admin/base_site.html' %}
+{% load i18n admin_urls static admin_list %}
 {% block title %}Registration Complete{% endblock %}
-
-      {% block contents %}
-      <div class="container">
-        <div class="row">
-          <!-- 列の左右に余白offset-4を入れる
-              列の上下パディングはpy-4 -->
-          <div class="col offset-4 py-4">
-            <h3>登録が完了しました</h3>
-            <p><a href="{% url 'accounts:login' %}">ログインはこちら</a><p>
-          </div>
-        </div>
-      </div>
-      {% endblock %}
+{% block content %}
+<div class="container">
+  <h3>登録が完了しました</h3>
+  <p><a href="{% url 'admin:login' %}">ログインはこちら</a></p>
+</div>
+{% endblock %}

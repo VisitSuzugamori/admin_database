@@ -1,0 +1,38 @@
+<link
+  href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+  rel="stylesheet"
+  type="text/css"
+/>
+<style type="text/css">
+  #mymap {
+    height: 500px;
+    width: 800px;
+  }
+</style>
+<div id="mymap"></div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v1.0.0/mapbox-gl-language.js"></script>
+<script>
+  const home_loc = {
+    center: [{{lon}}, {{lat}}],
+    zoom: 14,
+    pitch: 25,
+    bearing: 0,
+  };
+  mapboxgl.accessToken =
+    "pk.eyJ1IjoiaXNub3QiLCJhIjoiY2tkemV4MnR2MXRyMDJ4a2pzd2h1eHg1ayJ9.ALgtUeaHBDuvqvOR7008vA";
+  const map = new mapboxgl.Map({
+    container: "mymap",
+    style: "mapbox://styles/mapbox/streets-v11",
+    // style: "mapbox://styles/isnot/cknol1x9f59vg18l1r7zlhijc",
+    center: home_loc.center,
+    zoom: home_loc.zoom,
+    pitch: home_loc.pitch,
+    minZoom: 4,
+    hash: false,
+    localIdeographFontFamily: "'Noto Sans CJK JP', 'Noto Sans', sans-serif",
+  });
+  const marker1 = new mapboxgl.Marker().setLngLat(home_loc.center).addTo(map);
+  const language = new MapboxLanguage();
+  map.addControl(language);
+</script>

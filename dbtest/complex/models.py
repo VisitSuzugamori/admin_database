@@ -1,6 +1,9 @@
 from django.contrib import admin
 from django.db import models
+from django.template.loader import render_to_string
 from django.utils.html import format_html
+
+# from django.contrib.gis.forms.fields import PointField
 
 
 class Series(models.Model):
@@ -544,6 +547,13 @@ class Place(models.Model):
         ordering = ["-latitude", "longitude"]
         # get_latest_by = []
 
+    geom_type = "POINT"
+    # geom_class = Point
+    # form_class = PointField
+    description = "Place / geo.Point"
+    enable_3d = True
+    available_map = False
+
     @property
     @admin.display(description="Fragment")
     def display_fragments(self) -> str:
@@ -551,6 +561,36 @@ class Place(models.Model):
         for fragment in Fragment.objects.filter(place=self):
             titles.append(fragment.title)
         return " / ".join(titles)
+
+    def point(self):
+        return self.point3d() if self.enable_3d else self.point2d()
+
+    def point2d(self):
+        return (
+            self.longitude,
+            self.latitude,
+        )
+
+    def point3d(self):
+        return (
+            self.longitude,
+            self.latitude,
+            self.altitude,
+        )
+
+    @admin.display(description="登録地点")
+    def point_on_map(self):
+        if self.available_map:
+            return "(map)"
+        if isinstance(self.point2d(), tuple) and len(self.point()) > 1:
+            self.available_map = True
+            rendered = render_to_string(
+                "point_on_map.html",
+                {"lon": str(self.longitude), "lat": str(self.latitude)},
+            )
+            return rendered
+        else:
+            return "(map)"
 
     address = models.CharField(
         verbose_name="住所", help_text="", max_length=255, null=True, blank=True
@@ -600,6 +640,20 @@ class Step(models.Model):
         db_table_comment = "step 訪問 routeに含まれる地点を訪れた日時 [イベント]"
         # ordering = []
         # get_latest_by = []
+
+    @admin.display(description="登録地点")
+    def point_on_map(self):
+        if self.place.available_map:
+            return "(map)"
+        if isinstance(self.place.point2d(), tuple) and len(self.place.point()) > 1:
+            self.place.available_map = True
+            rendered = render_to_string(
+                "point_on_map.html",
+                {"lon": str(self.place.longitude), "lat": str(self.place.latitude)},
+            )
+            return rendered
+        else:
+            return "(map)"
 
     datetime = models.DateTimeField(verbose_name="日時", help_text="", null=True)
     number = models.PositiveIntegerField(

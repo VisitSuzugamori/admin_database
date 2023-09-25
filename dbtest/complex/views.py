@@ -38,4 +38,4 @@ class IndexView(ComplexMixin, TemplateView):
     template_name = "index.html"
     context_object_name = "orderby_records"
     queryset = Series.objects
-    paginate_by = 20
+    paginate_by = 1
