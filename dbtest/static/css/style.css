@@ -1,28 +1,29 @@
 body {
-    max-width: 100%;
+    max-width: 100vw;
     height: 100%;
     margin: 0;
     padding: 0;
 }
+main {
+    width: 80vw;
+    min-height: 50vh;
+    margin: 0 auto;
+}
 header {
-    background-image: url('./img/ikebukuro_landscape_2.jpg');
-    background-repeat: no-repeat;
-    background-color: lightcyan;
-    width: 100vw;
-    height: 170px;
+    width: 100%;
     margin: 0;
     padding: 0;
+    opacity: 0.7;
+    background-color: rgba(91, 219, 89, 0.2);
 }
 header h1 {
     color:brown;
     font-size: 36px;
-    font-family: 'Zen Kaku Gothic Antique', Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    position: absolute;
-    top: 0px;
     width: 80vw;
-    margin: 0 0.5em 0 10vw;
-    padding: 0.5em 0;
+    margin: 0;
+    padding: 0.5em;
     z-index: 100;
 }
 header h1 .lead { font-size: 60%; }
@@ -30,46 +31,30 @@ header h1 .lead::before {
     content: "\A";
     white-space: pre;
 }
-header nav {
-    background: linear-gradient(to bottom, transparent 80%, pink 100%);
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 170px;
+nav {
+    background: linear-gradient(to bottom, transparent 70%, rgba(124, 125, 137, 0.4) 100%);
 }
-header nav ul {
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 80vw;
+    width: 75vw;
     height: 100%;
     overflow: hidden;
     margin: 0;
 }
-header nav ul li {
+nav ul li {
     min-width: 100px;
     min-height: 2em;
     margin: 0 4px;
     padding: 4px;
     list-style: none;
-    background: lightcyan;
-    opacity: 0.5;
-}
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-wrap: wrap;
-    width: 80vw;
-    min-height: 100%;
-    margin: 0 auto;
+    background: rgba(91, 219, 89, 0.404);
 }
 article {
-    max-width: 60vw;
-    flex: auto;
-    float: top;
+    max-width: 70vw;
+    opacity: 0.2;
 }
 article img {
     box-shadow: 2px 2px 4px 1px #29627e;
@@ -88,30 +73,26 @@ aside ul, aside p {
     background: lightyellow;
 }
 footer {
-    width: 100dw;
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+    display: flex;
+    width: 100%;
     background: silver;
-    opacity: 0.7;
     margin-top: 3em;
     padding: 0;
     font-size: 80%;
-    min-height: 100%;
+    opacity: 0.7;
 }
-footer section {
-    display: flex;
+footer .box {
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 80vw;
+    width: 95%;
 }
-footer p, footer dl, footer ul, footer div {
-    width: 80dvw;
-    margin: 0 auto;
-    padding: 20px 0;
-    /* border: solid 1px black; */
-}
-footer .box {
+footer .box p {
     margin: 0;
     padding: 10px 1em;
 }
@@ -131,11 +112,19 @@ footer .box {
 .note::before {
     content: "⚠";
 }
-#float {
+.float {
     position: fixed;
     left: auto;
     bottom: 0%;
     max-width: 38em;
     padding: 0;
     margin: 0;
+}
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
 }

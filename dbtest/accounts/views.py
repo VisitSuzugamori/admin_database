@@ -1,7 +1,7 @@
 # from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, TemplateView
-
+from django.contrib.auth.views import PasswordResetCompleteView
 from .forms import CustomUserCreationForm
 
 
@@ -33,6 +33,8 @@ class SignUpView(CreateView):
 
 
 class SignUpSuccessView(TemplateView):
-    """サインアップ成功ページのビュー"""
-
     template_name = "signup_success.html"
+
+
+class MyPasswordResetCompleteView(PasswordResetCompleteView):
+    template_name = "password_reset_complete.html"

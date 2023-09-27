@@ -1,27 +1,58 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %}VSDB | HOME{% endblock %}
-{% block header %}
-<h1>VSDB<span class="lead">HOME</span></h1>
-{% endblock %}
-{% block contents %}
-<p>
-    <a href="{% url 'complex:index' %}admin/" class="btn">admin</a>
-</p>
-{% if user.is_authenticated %}
-<p>
-    <a href="{% url 'admin:logout' %}" class="btn">ログアウト</a>
-</p>
-{% else %}
-<p>
-    <a href="{% url 'accounts:signup' %}" class="btn">今すぐサインアップ</a>
-</p>
-<p>
-    <a href="{% url 'admin:login' %}" class="btn">登録済みの方はログイン</a>
-</p>
-{% endif %}
-</p>
-{% for record in orderby_records %}
-<h2><a href={% url "complex:page" record.id %}>{{ record.title }}</a></h2>
-{% endfor %}
+{% block header %}<h1>VSDB</h1>{% endblock %}
+{% block content %}
+
+<h2>
+    {{ orderby_records.0.title }}
+    <span class="side">{{ orderby_records.0.author }}</span>
+</h2>
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v1.0.0/mapbox-gl-language.js"></script>
+<script>
+const home_loc = {
+    center: [137.17, 36.05],
+    zoom: 4,
+    pitch: 25,
+    bearing: 0
+};
+mapboxgl.accessToken = "pk.eyJ1IjoiaXNub3QiLCJhIjoiY2tkemV4MnR2MXRyMDJ4a2pzd2h1eHg1ayJ9.ALgtUeaHBDuvqvOR7008vA";
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: "mapbox://styles/mapbox/streets-v11",
+    center: home_loc.center,
+    zoom: home_loc.zoom,
+    pitch: home_loc.pitch,
+    minZoom: 4,
+    hash: false,
+    localIdeographFontFamily: "'Noto Sans CJK JP', 'Noto Sans', sans-serif",
+});
+const language = new MapboxLanguage();
+map.addControl(language);
+
+map.on('load', () => {
+    map.loadImage(
+        '{% static "img/visitsuzugamori-icon16.png" %}',
+        (error, image) => {
+            if (error) throw error;
+            map.addImage('custom-marker', image);
+            map.addSource('zatsumap', { type: 'geojson', data: '{% static "zatsumap.geojson" %}' });
+            map.addLayer({
+                'id': 'points',
+                'type': 'symbol',
+                'source': 'zatsumap',
+                'layout': {
+                    'icon-image': 'custom-marker',
+                    'text-field': ['get', 'name'],
+                    'text-offset': [0, 0.5],
+                    'text-anchor': 'top',
+                    'text-size': 10,
+                    'text-allow-overlap': true,
+                }
+            });
+        }
+    );
+});
+</script>
 {% endblock %}

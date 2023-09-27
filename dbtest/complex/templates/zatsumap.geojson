@@ -1,0 +1,33 @@
+{
+    "type": "FeatureCollection",
+    "features": [{% for item in all_places %}
+        {
+            "geometry": {
+                "coordinates": [
+                    {{item.longitude}},
+                    {{item.latitude}}
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "{{item.address}}",
+                "name": "{{item.name}}"
+            },
+            "type": "Feature"
+        },{% endfor %}
+        {
+            "geometry": {
+                "coordinates": [
+                    139.7305643,
+                    35.5934845
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "description": "東京都 品川区 南大井４丁目１８−１４",
+                "name": "鈴ヶ森公園"
+            },
+            "type": "Feature"
+        }
+    ]
+}

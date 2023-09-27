@@ -413,7 +413,7 @@ class VenueAdmin(admin.ModelAdmin):
         "type_master",
     )
     list_display_links = ("name",)
-    filter_horizontal = ["story"]
+    # filter_horizontal = ["story"]
 
 
 @admin.register(Place)

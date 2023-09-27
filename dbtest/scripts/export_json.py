@@ -1,6 +1,7 @@
 # import hjson
 
 # from complex.models import Character, Comic, Journey, Magazine, Series, Story
+from complex.models import Place
 
 
 class JsonExporter:
@@ -30,12 +31,12 @@ class JsonExporter:
                 self.json_filename = JsonExporter.DEFAULT_OUTPUT
 
     def start(self):
-        content = ""
+        content = Place.get_geojson()
         JsonExporter.replace_file_content(self.json_filename, content)
 
 
 # run() via shell
 # (at project dir)$ python manage.py runscript setup_data
 def run() -> None:
-    task = JsonExporter("data.json")
+    task = JsonExporter("zatsumap.geojson")
     task.start()

@@ -10,29 +10,34 @@
     <meta property="og:locale" content="ja_JP">
     <meta property="article:author" content="naoto">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href={% static "css/sakura.css" %}>
+    <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" />
     <link rel="stylesheet" type="text/css" href={% static "css/style.css" %}>
-    <style>
-    </style>
   </head>
   <body>
+    <div id="map"></div>
     <main id="container">
       <header class="article-header">
         {% block header %}{% endblock %}
+        <nav>
+          <ul class="box nav">
+            {% if user.is_authenticated %}
+            <li class="nav-item"><a class="nav-link" href={% url 'admin:index' %} class="btn">🧑‍💻コンテンツ管理用サイト</a></li>
+            <li class="nav-item"><a class="nav-link" href={% url 'admin:logout' %} class="btn">🏃🏻ログアウト</a></li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link" href={% url 'accounts:signup' %} class="btn">🕺🏻サインアップ</a></li>
+            <li class="nav-item"><a class="nav-link" href={% url 'admin:login' %} class="btn">🧘登録済みの方はログイン</a></li>
+            {% endif %}
+          </ul>
+        </nav>
       </header>
       <article>
-        {% block contents %}{% endblock %}
+        {% block content %}{% endblock %}
       </article>
     </main>
     <footer id="footer">
-      <section>
-        <ul class="box nav">
-          <li class="nav-item"><a class="nav-link" href={% url "complex:index" %}>☝HOME</a></li>
-        </ul>
-        <div class="box">
-          <h3>by naoto</h3>
-        </div>
-      </section>
+      <div class="box">
+        <p>by naoto</p>
+      </div>
     </footer>
   </body>
 </html>

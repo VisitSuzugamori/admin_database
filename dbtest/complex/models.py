@@ -592,6 +592,14 @@ class Place(models.Model):
         else:
             return "(map)"
 
+    @classmethod
+    def get_geojson(cls):
+        rendered = render_to_string(
+            "zatsumap.geojson",
+            {"all_places": Place.objects.all()},
+        )
+        return rendered
+
     address = models.CharField(
         verbose_name="住所", help_text="", max_length=255, null=True, blank=True
     )

@@ -1,15 +1,14 @@
 from django.views.generic.base import TemplateView
+from django.views.generic import ListView
 
 from .models import Series
 
-# from django.views.generic import ListView, DetailView, FormView
 # from django.urls import reverse_lazy
 # from django.contrib import messages
 
-# from .forms import ContactForm
 
-
-class ComplexMixin:
+class PageView(TemplateView):
+    template_name = "index.html"
     model = Series
 
     def get_context_data(self, **kwargs):
@@ -24,18 +23,28 @@ class ComplexMixin:
         dict
             ctx
         """
-        ctx = super().get_context_data(**kwargs)
+
+        ctx = super().get_context_data(**kwargs)  # type: ignore
         # ctx["site"] = site
         # print("%%gcd_9", kwargs.keys(), ctx.keys(), dir(ctx["view"]))
         return ctx
 
 
-class PageView(ComplexMixin, TemplateView):
+class IndexView(ListView):
     template_name = "index.html"
-
-
-class IndexView(ComplexMixin, TemplateView):
-    template_name = "index.html"
+    model = Series
     context_object_name = "orderby_records"
-    queryset = Series.objects
+    queryset = Series.objects.all()
     paginate_by = 1
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        """
+        get_context_data ctxコンテンツの
+
+        Returns
+        ------
+        dict
+            ctx
+        """
+        ctx = super().get_context_data(object_list=object_list, **kwargs)
+        return ctx
