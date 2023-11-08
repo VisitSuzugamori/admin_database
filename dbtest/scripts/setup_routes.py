@@ -17,7 +17,7 @@ from complex.models import (
     Venue,
 )
 
-from ._my_html_parser import MyHTMLParser
+from ._config_js_parser import ConfigJsParser
 
 
 class RouteImporter:
@@ -304,7 +304,7 @@ class RouteImporter:
             print(json["title"], end="")
             self._step_count = 1
             for chapter in json["chapters"]:
-                dom_parser = MyHTMLParser()
+                dom_parser = ConfigJsParser()
                 dom_parser.feed(chapter["description"])
                 dom_parser.close()
                 data = dom_parser.extract()
