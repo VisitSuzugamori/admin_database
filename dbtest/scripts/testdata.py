@@ -155,7 +155,7 @@ def import_data():
     complex_comic_1.issued = dateutil.parser.parse("2019-09-27")
     complex_comic_1.memo = None
     complex_comic_1.number = 1
-    complex_comic_1.obi = 'ここではない、どこか。そこに私が待っている――。'
+    complex_comic_1.obi = 'ここではない、どこか。そこに私が待っている——。'
     complex_comic_1.released = dateutil.parser.parse("2019-09-27")
     complex_comic_1.series = complex_series_1
     complex_comic_1.title = "ざつ旅-That's Journey- 1"
@@ -179,7 +179,7 @@ def import_data():
     complex_comic_3.issued = dateutil.parser.parse("2020-07-27")
     complex_comic_3.memo = None
     complex_comic_3.number = 3
-    complex_comic_3.obi = '――また、行きます。'
+    complex_comic_3.obi = '——また、行きます。'
     complex_comic_3.released = dateutil.parser.parse("2020-07-27")
     complex_comic_3.series = complex_series_1
     complex_comic_3.title = "ざつ旅-That's Journey- 3"
@@ -191,7 +191,7 @@ def import_data():
     complex_comic_4.issued = dateutil.parser.parse("2020-12-26")
     complex_comic_4.memo = None
     complex_comic_4.number = 4
-    complex_comic_4.obi = '「いままで」から「これから」へ――'
+    complex_comic_4.obi = '「いままで」から「これから」へ——'
     complex_comic_4.released = dateutil.parser.parse("2020-12-26")
     complex_comic_4.series = complex_series_1
     complex_comic_4.title = "ざつ旅-That's Journey- 4"
@@ -5739,7 +5739,7 @@ def import_data():
     complex_photo_134.image_src = 'https://live.staticflickr.com/5332/9431836387_d15f4c8cff_z.jpg'
     complex_photo_134.link = 'https://www.flickr.com/search/?lat=35.8085032&lon=139.1138905&radius=0.1&has_geo=1&view_all=1'
     complex_photo_134.person = None
-    complex_photo_134.title = '豪雨襲来！ Σ(￣□￣ﾉ)ﾉ'
+    complex_photo_134.title = '豪雨襲来！ Σ(‾□‾ノ)ノ'
     complex_photo_134.type_master = complex_type_master_23
     complex_photo_134.username = 'mortardesign'
     complex_photo_134.width = None
@@ -15665,7 +15665,7 @@ def import_data():
     complex_place_475.latitude = Decimal('33.887012')
     complex_place_475.longitude = Decimal('130.884924')
     complex_place_475.memo = None
-    complex_place_475.name = 'バジェット･レンタカー 小倉駅前店'
+    complex_place_475.name = 'バジェット・レンタカー 小倉駅前店'
     complex_place_475.venue = None
     complex_place_475 = importer.save_or_locate(complex_place_475)
 
