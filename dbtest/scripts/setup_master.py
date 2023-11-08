@@ -120,6 +120,6 @@ class TypeMasterImporter:
 
 
 # run() via shell
-# (at project dir)$ python manage.py runscript setup_data
+# (at project dir)$ python manage.py runscript setup_master
 def run():
     return TypeMasterImporter.make()

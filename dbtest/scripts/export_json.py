@@ -36,7 +36,7 @@ class JsonExporter:
 
 
 # run() via shell
-# (at project dir)$ python manage.py runscript setup_data
+# (at project dir)$ python manage.py runscript export_json
 def run() -> None:
     task = JsonExporter("zatsumap.geojson")
     task.start()
